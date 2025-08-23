@@ -1,0 +1,125 @@
+/* 色の定数定義 */
+:root {
+  --background-color: ghostwhite;
+  --element-background: white;
+  --border-color: steelblue;
+}
+
+/* 全体のスタイル */
+html {
+  background-color: var(--background-color);
+  font-family: 'Yu Gothic UI';
+  font-weight: 400;
+}
+
+/* portalコンテナのスタイル */
+.portal {
+  background-color: var(--background-color);
+  padding: 1rem;
+  padding-top: 0;
+
+  * {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+  }
+
+  /* imgタグのサイズを固定 */
+  img {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+  }
+
+  .icon {
+    padding-right: 1rem;
+  }
+}
+
+
+.header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  background-color: var(--background-color);
+}
+.title {
+  margin: 0;
+  padding: 0;
+  display: block;
+  background-color: var(--background-color);
+  font-size: 2rem;
+  font-weight: 200;
+
+  > div {
+    background-color: var(--background-color);
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  background-color: var(--background-color);
+  color: var(--border-color);
+}
+
+.app-content {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--background-color);
+
+  > div {
+    background-color: var(--element-background);
+    flex: 1;
+  }
+}
+
+.app-list {
+  overflow-y: auto;
+  max-height: 45vh;
+
+  /* Webkit系ブラウザ（Chrome, Safari, Edge）用 */
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+
+    &:hover {
+      background: #555;
+    }
+  }
+
+  > div {
+    border: 0;
+    background-color: aliceblue;
+  }
+}
+
+.menu {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: end;
+  background-color: var(--background-color);
+  * {
+    background-color: var(--background-color);
+  }
+  > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--border-color);
+    background-color: var(--background-color);
+  }
+}

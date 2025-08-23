@@ -1,11 +1,20 @@
 <template>
-
-    <body style="border: 0px solid #000; margin: 0px; padding: 0px; ">
-        <h2>こんにちは</h2>
-        <div style="display: flex; justify-content: space-evenly;">
-            <div style="flex: 1;">AppPreview.vue </div>
-            <div style="flex: 1; ">AppList.vue
-                <div style="overflow-y: auto; max-height: 30vh;">
+    <div class="portal">
+        <div class="header">
+            <div class="header-title">
+                <div class="title">こんにちは
+                    <div>PORTFOLIO</div>
+                </div>
+            </div>
+            <div class="header-menu">
+                <div class="icon"><img src="./assets/img/github.svg" alt="github">My Git</div>
+                <div class="icon"><img src="./assets/img/history.svg" alt="history">更新履歴 </div>
+            </div>
+        </div>
+        <div class="app-content">
+            <div>Preview.vue </div>
+            <div>AppList.vue
+                <div class="app-list">
                     <div>①AppCard.vue</div>
                     <div>②AppCard.vue</div>
                     <div>③AppCard.vue</div>
@@ -29,31 +38,24 @@
                 </div>
             </div>
         </div>
-        <div style="display: flex; justify-content: end;">
-            <div style="display: inline-block; ">システム構成</div>
-            <div style="display: inline-block; ">使用サービス</div>
+        <div class="menu">
+            <div class="icon"><img src="./assets/img/system.svg" alt="system">システム構成</div>
+            <div class="icon"><img src="./assets/img/service.svg" alt="service">使用サービス</div>
         </div>
-        <div style="display: flex; ">
-            <div>サムネイル</div>
-            <div>
-                <h5>サンプルコンテンツ</h5>
-                <h6>サンプルで作成したコンテンツです</h6>
-            </div>
-            <div>タグ</div>
-            <div>タグ</div>
-            <div>タグ</div>
-            <div>→</div>
-        </div>
-    </body>
+        <!-- <div style="display: flex; ">
+    <div >サムネイル</div>
+    <div>
+      <h5>サンプルコンテンツ</h5>
+      <h6>サンプルで作成したコンテンツです</h6>
+    </div>
+    <div>タグ</div>
+    <div>タグ</div>
+    <div>タグ</div>
+    <div >→</div>
+  </div> -->
+    </div>
 </template>
 
-<style>
-    /* 全ての要素に適用 */
-    * {
-      border: 1px solid #8f8e8e;
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 5px;
-      padding: 5px;
-
-    }
-  </style>
+<style lang="scss">
+@use './assets/scss/style.scss';
+</style>

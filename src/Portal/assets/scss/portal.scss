@@ -36,13 +36,13 @@ html {
   }
 }
 
-
 .header {
   display: flex;
   align-items: start;
   justify-content: space-between;
   background-color: var(--background-color);
 }
+
 .title {
   margin: 0;
   padding: 0;
@@ -80,6 +80,10 @@ html {
 .app-list {
   overflow-y: auto;
   max-height: 45vh;
+  * {
+    margin: 3px;
+    padding: 3px;
+  }
 
   /* Webkit系ブラウザ（Chrome, Safari, Edge）用 */
   &::-webkit-scrollbar {
@@ -99,11 +103,6 @@ html {
       background: #555;
     }
   }
-
-  > div {
-    border: 0;
-    background-color: aliceblue;
-  }
 }
 
 .menu {
@@ -111,9 +110,11 @@ html {
   display: flex;
   justify-content: end;
   background-color: var(--background-color);
+
   * {
     background-color: var(--background-color);
   }
+
   > div {
     display: flex;
     flex-direction: column;
@@ -123,3 +124,5 @@ html {
     background-color: var(--background-color);
   }
 }
+
+

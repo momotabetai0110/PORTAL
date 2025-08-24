@@ -1,0 +1,71 @@
+/* 色の定数定義 */
+:root {
+  --background-color: ghostwhite;
+  --border-color: steelblue;
+}
+
+/* 全体のスタイル */
+html {
+  background-color: var(--background-color);
+  font-family: 'Yu Gothic UI';
+  font-weight: 400;
+}
+
+.app-card {
+  display: flex;
+  align-items: center;
+  background-color: var(--background-color);
+  border: 1px solid var(--background-color);
+  border-radius: 8px;
+  .app-card-thumbnail {
+    justify-content: start;
+    img {
+      width: 10vw;
+      height: 15vh;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+
+  .app-card-title {
+  }
+
+  .app-card-tag {
+    display: inline-block;
+    flex-direction: column;
+    .app-card-tag-blue {
+      display: inline-block ;
+      justify-content: center;
+      background-color: var(--border-color);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      color: white;
+    }
+
+    .app-card-tag-red {
+      display: inline-block;
+      background-color:indianred;
+      border: 1px solid indianred;
+      border-radius: 8px;
+      color: white;
+    }
+
+    .app-card-tag-green {
+      display: inline-block;
+      background-color:mediumseagreen;
+      border: 1px solid mediumseagreen;
+      border-radius: 8px;
+      color: white;
+    }
+
+    .app-card-tag-yellow {
+      display: inline-block;
+      background-color:darkorange;
+      border: 1px solid darkorange;
+      border-radius: 8px;
+      color: white;
+    }
+
+  }
+
+}

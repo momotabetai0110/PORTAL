@@ -11,7 +11,7 @@ export const AppsData: AppsData[] = [
     {
         title: 'EMOJI-ESCAPE',
         description: 'スマホで遊べるミニゲーム',
-        image: 'image 1',
+        image: '/src/Portal/assets/img/sample.png',
         languages: ['JavaScript', 'PHP'],
         frameworks: ['Vue.js', 'Laravel'],
         tags: ['MySQL', 'API', 'cookie'],
@@ -19,7 +19,7 @@ export const AppsData: AppsData[] = [
     {
         title: 'ポートフォリオ',
         description: 'ポートフォリオサイト',
-        image: 'image 1',
+        image: '/src/Portal/assets/img/sample.png',
         languages: ['TypeScript'],
         frameworks: ['Vue.js'],
         tags: ['HTML', 'CSS' ],
@@ -27,7 +27,7 @@ export const AppsData: AppsData[] = [
     {
         title: 'Sample',
         description: 'サンプルサイト',
-        image: 'image 1',
+        image: '/src/Portal/assets/img/sample.png',
         languages: ['JavaScript'],
         frameworks: ['Vue.js'],
         tags: ['HTML', 'CSS' ],

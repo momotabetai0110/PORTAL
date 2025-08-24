@@ -77,34 +77,6 @@ html {
   }
 }
 
-.app-list {
-  overflow-y: auto;
-  max-height: 45vh;
-  * {
-    margin: 3px;
-    padding: 3px;
-  }
-
-  /* Webkit系ブラウザ（Chrome, Safari, Edge）用 */
-  &::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  &::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 4px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background: var(--border-color);
-    border-radius: 4px;
-
-    &:hover {
-      background: #555;
-    }
-  }
-}
-
 .menu {
   margin: 0.5rem;
   display: flex;

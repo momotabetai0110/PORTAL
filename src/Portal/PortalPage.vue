@@ -13,15 +13,8 @@
         </div>
         <div class="app-content">
             <div>Preview.vue </div>
-            <div>AppList.vue
-                <div class="app-list">
-                    <AppCard />
-                    <AppCard />
-                    <AppCard />
-                    <AppCard />
-                    <AppCard />
-                </div>
-            </div>
+            <AppList />
+
         </div>
         <div class="menu">
             <div class="icon"><img src="./assets/img/system.svg" alt="system">システム構成</div>
@@ -32,7 +25,7 @@
 </template>
 
 <script setup>
-import AppCard from './components/AppCard.vue';
+import AppList from './components/AppList.vue';
 </script>
 <style lang="scss">
 @use './assets/scss/portal.scss';

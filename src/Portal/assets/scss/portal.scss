@@ -70,10 +70,11 @@ html {
   display: flex;
   justify-content: space-evenly;
   background-color: var(--background-color);
-
   > div {
     background-color: var(--element-background);
     flex: 1;
+    height: 60vh;
+    max-height: 60vh;
   }
 }
 

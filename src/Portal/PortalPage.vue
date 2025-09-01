@@ -12,9 +12,9 @@
             </div>
         </div>
         <div class="app-content">
-            <div>Preview.vue </div>
+            <!-- <div>Preview.vue </div> -->
+            <AppPreview />
             <AppList />
-
         </div>
         <div class="menu">
             <div class="icon"><img src="./assets/img/system.svg" alt="system">システム構成</div>
@@ -26,6 +26,7 @@
 
 <script setup>
 import AppList from './components/AppList.vue';
+import AppPreview from './components/AppPreview.vue';
 </script>
 <style lang="scss">
 @use './assets/scss/portal.scss';

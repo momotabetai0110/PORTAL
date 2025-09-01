@@ -1,5 +1,5 @@
 .app-list-container {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 200;
   img {
     width: 48px;
@@ -12,6 +12,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  *{
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+
 
 
   .app-list-header-title {

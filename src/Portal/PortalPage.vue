@@ -7,7 +7,7 @@
                 </div>
             </div>
             <div class="header-menu">
-                <div class="icon"><img src="./assets/img/github.svg" alt="github">My Git</div>
+                <a class="icon" href="https://github.com/momotabetai0110"><img src="./assets/img/github.svg" alt="github">My Git</a>
                 <div class="icon" @click="setModal(1)"><img src="./assets/img/history.svg" alt="history">更新履歴 </div>
             </div>
         </div>

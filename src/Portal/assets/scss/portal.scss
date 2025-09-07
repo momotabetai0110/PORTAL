@@ -98,4 +98,32 @@ html {
   }
 }
 
+.modal-img{
+  >img{
+    width: 100%;
+  }
+}
+.modal-content-history {
+  padding: 20px;
+  max-height: 50vh;
+  overflow-y: scroll
+}
+
+.table-data {
+  display: flex;
+  padding: 10px;
+
+}
+
+.table-data-date {
+  padding-left: 30px;
+}
+
+.table-data-title {
+  padding-left: 80px;
+}
+
+.modal-content table td {
+  font-size: 1.2rem;
+}
 

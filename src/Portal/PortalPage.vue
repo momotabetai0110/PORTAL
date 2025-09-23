@@ -27,18 +27,18 @@
     <commonModal :show="isModalType" :title=modalTitle @close="isModalType = 0">
         <!-- 更新履歴 -->
         <div v-show="isModalType == 1" class="modal-content-history">
-            <table>
-                <tr v-for="history in updateHistory">
+            <div>
+                <div v-for="history in updateHistory">
                     <div class="table-data">
                         <div class="table-data-date">
-                            <td>{{ history.date }}</td>
+                            <div>{{ history.date }}</div>
                         </div>
                         <div class="table-data-title">
-                            <td>{{ history.title }}</td>
+                            <div>{{ history.title }}</div>
                         </div>
                     </div>
-                </tr>
-            </table>
+                </div>
+            </div>
         </div>
 
         <!-- システム構成 -->

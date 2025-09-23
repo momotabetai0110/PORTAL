@@ -8,7 +8,7 @@
 /* 全体のスタイル */
 html {
   background-color: var(--background-color);
-  font-family: 'Yu Gothic UI';
+  font-family: "Yu Gothic UI";
   font-weight: 400;
 }
 
@@ -33,6 +33,12 @@ html {
 
   .icon {
     padding-right: 1rem;
+    color: var(--border-color);
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+      background-color: gainsboro;
+    }
   }
 }
 
@@ -82,37 +88,34 @@ html {
   margin: 0.5rem;
   display: flex;
   justify-content: end;
-  background-color: var(--background-color);
-
-  * {
-    background-color: var(--background-color);
-  }
-
   > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: var(--border-color);
-    background-color: var(--background-color);
   }
 }
 
-.modal-img{
-  >img{
+.modal-img {
+  > img {
     width: 100%;
   }
 }
 .modal-content-history {
+  width: 100%;
   padding: 20px;
   max-height: 50vh;
-  overflow-y: scroll
+  overflow-y: scroll;
 }
 
 .table-data {
   display: flex;
   padding: 10px;
-
+  font-weight: 200;
+  border-bottom: 1px solid gainsboro;
+  margin-bottom: 3%;
+  font-size: 1.7rem;
 }
 
 .table-data-date {
@@ -122,8 +125,3 @@ html {
 .table-data-title {
   padding-left: 80px;
 }
-
-.modal-content table td {
-  font-size: 1.2rem;
-}
-

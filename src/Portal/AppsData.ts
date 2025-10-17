@@ -13,10 +13,10 @@ export interface AppsData {
 
 export const AppsData: AppsData[] = [
     {
-        title: 'サンプルサイト1',
-        description: 'PC対応のサンプルサイト',
+        title: 'ダミーアプリ1',
+        description: 'PC対応のダミーアプリ',
         image: '/src/Portal/assets/img/sample_thumb.jpg',
-        url: 'https://sample.com',
+        url: 'https://momotabetai0110.github.io/DUMMY-APP/',
         releaseDate: '2021-01-01',
         deviceType: 1,
         database: 'MySQL',
@@ -25,10 +25,10 @@ export const AppsData: AppsData[] = [
         tags: ['HTML', 'CSS' ],
     },
     {
-        title: 'サンプルサイト2',
-        description: 'スマホ対応のサンプルサイト',
+        title: 'ダミーアプリ2',
+        description: 'スマホ対応のダミーアプリ',
         image: '/src/Portal/assets/img/sample_thumb.jpg',
-        url: 'https://sample.com',
+        url: 'https://momotabetai0110.github.io/DUMMY-APP/',
         releaseDate: '2021-01-02',
         deviceType: 1,
         database: 'MySQL',
@@ -37,10 +37,10 @@ export const AppsData: AppsData[] = [
         tags: ['HTML', 'CSS' ],
     },
     {
-        title: 'サンプルサイト3',
-        description: '両方対応のサンプルサイト',
+        title: 'ダミーアプリ3',
+        description: '両方対応のダミーアプリ',
         image: '/src/Portal/assets/img/sample_thumb.jpg',
-        url: 'https://sample.com',
+        url: 'https://momotabetai0110.github.io/DUMMY-APP/',
         releaseDate: '2021-01-03',
         deviceType: 3,
         database: 'MySQL',

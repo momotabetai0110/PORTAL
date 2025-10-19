@@ -7,7 +7,7 @@
 /* 全体のスタイル */
 html {
   background-color: var(--background-color);
-  font-family: 'Yu Gothic UI';
+  font-family: "Yu Gothic UI";
   font-weight: 400;
 }
 
@@ -17,6 +17,12 @@ html {
   background-color: var(--background-color);
   border: 1px solid var(--background-color);
   border-radius: 8px;
+
+  * {
+    margin: 3px !important;
+    padding: 3px !important;
+  }
+
   .app-card-thumbnail {
     justify-content: start;
     img {
@@ -28,13 +34,14 @@ html {
   }
 
   .app-card-title {
+    width: 15vw;
   }
 
   .app-card-tag {
     display: inline-block;
     flex-direction: column;
     .app-card-tag-blue {
-      display: inline-block ;
+      display: inline-block;
       justify-content: center;
       background-color: var(--border-color);
       border: 1px solid var(--border-color);
@@ -44,7 +51,7 @@ html {
 
     .app-card-tag-red {
       display: inline-block;
-      background-color:indianred;
+      background-color: indianred;
       border: 1px solid indianred;
       border-radius: 8px;
       color: white;
@@ -52,7 +59,7 @@ html {
 
     .app-card-tag-green {
       display: inline-block;
-      background-color:mediumseagreen;
+      background-color: mediumseagreen;
       border: 1px solid mediumseagreen;
       border-radius: 8px;
       color: white;
@@ -60,12 +67,27 @@ html {
 
     .app-card-tag-yellow {
       display: inline-block;
-      background-color:darkorange;
+      background-color: darkorange;
       border: 1px solid darkorange;
       border-radius: 8px;
       color: white;
     }
-
   }
 
+  .app-card-device{
+    img{
+      width: 36px;
+      height: 36px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+  .app-card-play {
+    color: var(--border-color);
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+      background-color: gainsboro;
+    }
+  }
 }

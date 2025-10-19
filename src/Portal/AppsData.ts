@@ -14,7 +14,7 @@ export interface AppsData {
 export const AppsData: AppsData[] = [
     {
         title: 'ダミーアプリ1',
-        description: 'PC対応のダミーアプリ',
+        description: 'PC対応のみのダミーアプリ',
         image: '/src/Portal/assets/img/sample_thumb.jpg',
         url: 'https://momotabetai0110.github.io/DUMMY-APP/',
         releaseDate: '2021-01-01',
@@ -26,14 +26,14 @@ export const AppsData: AppsData[] = [
     },
     {
         title: 'ダミーアプリ2',
-        description: 'スマホ対応のダミーアプリ',
+        description: 'スマホのみ対応のダミーアプリ',
         image: '/src/Portal/assets/img/sample_thumb.jpg',
         url: 'https://momotabetai0110.github.io/DUMMY-APP/',
         releaseDate: '2021-01-02',
-        deviceType: 1,
+        deviceType: 2,
         database: 'MySQL',
         languages: ['JavaScript'],
-        frameworks: ['Vue.js'],
+        frameworks: ['Laravel'],
         tags: ['HTML', 'CSS' ],
     },
     {
@@ -45,7 +45,7 @@ export const AppsData: AppsData[] = [
         deviceType: 3,
         database: 'MySQL',
         languages: ['JavaScript'],
-        frameworks: ['Vue.js'],
+        frameworks: ['Vue.js','Laravel'],
         tags: ['HTML', 'CSS' ],
     },
 ]

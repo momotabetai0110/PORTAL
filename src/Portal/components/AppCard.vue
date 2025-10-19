@@ -4,22 +4,39 @@
             <img src="../assets/img/sample_thumb.jpg" alt="サンプル">
         </div>
         <div class="app-card-title">
-            <div>サンプルコンテンツ</div>
-            <div>サンプルで作成したコンテンツです</div>
+            <div>{{ app.title }}</div>
+            <div> {{ app.description }}</div>
         </div>
-        <div class="app-card-tag">
-            <div class="app-card-tag-blue">php</div>
-            <div class="app-card-tag-red">javascript</div>
-            <div class="app-card-tag-green">python</div>
-            <div class="app-card-tag-yellow">java</div>
+        <div class ="app-card-body">
+            <div class="app-card-tag">
+                <!-- <div class="app-card-tag-blue">php</div> -->
+                <!-- <div class="app-card-tag-yellow">java</div> -->
+                <div class="app-card-tag-red">Laravel</div>
+                <div class="app-card-tag-green">Vue.js</div>
+            </div>
+            <div class="app-card-device">
+                <div v-if="app.deviceType == 1">
+                    <img src="../assets/img/pc.svg" alt="device">
+                </div>
+                <div v-if="app.deviceType == 2">
+                    <img src="../assets/img/tablet.svg" alt="device">
+                </div>
+                <div v-if="app.deviceType == 3">
+                    <img src="../assets/img/pc.svg" alt="device">
+                    <img src="../assets/img/tablet.svg" alt="device">
+                </div>
+            </div>
         </div>
-        <div class="app-card-play">
+        <a class="app-card-play" :href=app.url target="_blank">
             <img src="../assets/img/play.svg" alt="arrow">
-        </div>
+        </a>
     </div>
 </template>
 
 <script setup>
+defineProps({
+    app: Object
+})
 </script>
 
 <style lang="scss">
